@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Innovation Showcase</h1>
+    <p>Explore our tools, plans, and media highlights before signing up!</p>
+  </header>
+   <h2>Why Join Our Innovation Hub?</h2>
+  <ul>
+    <li>Collaborate with peers on real-world tech projects</li>
+    <li>Access mentorship from industry professionals</li>
+    <li>Turn your ideas into startups with our incubator</li>
+  </ul>
+
+  <section>
+    <h2> Top Tools for Young Innovators</h2>
+    <ol>
+      <li>Arduino Starter Kit</li>
+      <li>Figma for UI/UX Design</li>
+      <li>Canva for quick graphics</li>
+      <li>XAMPP for local web development</li>
+      <li>ChatGPT for idea generation</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2> Membership Plans</h2>
+    <table border="1" >
+      <tr>
+        <th>Plan</th>
+        <th>Features</th>
+        <th>Monthly Cost</th>
+      </tr>
+      <tr>
+        <td>Starter</td>
+        <td>Online resources, 1 workshop/month</td>
+        <td>Kes 500</td>
+      </tr>
+      <tr>
+        <td>Pro</td>
+        <td>Starter + mentorship + robotics lab</td>
+        <td>Kes 1,500</td>
+      </tr>
+      <tr>
+        <td>Elite</td>
+        <td>Pro + startup incubator access</td>
+        <td>Kes 3,000</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2> Media Highlights</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <br /><br />
+    <img src="media/nature.webp" alt="Nature scenery" width="300" height="200">
+  </section>
+
+  <section>
+    <h2> Signup Form</h2>
+    <form action="/submit" method="POST" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+<br /><br />
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. John Paul Mwangi" required minlength="3">
+<br /><br />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="e.g. johnpaul@domain.com" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
+<br /><br />
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+254\d{9}$" title="Enter a valid Kenyan phone number">
+<br /><br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+<br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+<br /><br />
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required readonly value="johnpaul2025">
+<br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Strong password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must include uppercase, lowercase, and a number">
+<br /><br />
+        <label for="plan">Select Plan:</label>
+        <select id="plan" name="plan" required>
+          <option value="">--Choose a plan--</option>
+          <option value="starter">Starter</option>
+          <option value="pro">Pro</option>
+          <option value="elite">Elite</option>
+        </select>
+<br /><br />
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Tell us more about your interests..."></textarea>
+<br /><br />
+      </fieldset>
+
+      <button type="submit">Submit Form</button>
+    </form>
+  </section>
+<br /><br />
+  <footer>
+    <p>&copy; 2025 Innovation Hub | Designed by John Paul</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>week 2 - Enhanced HTML</title>
+    </head>
+    <body>
+        <h2>Ordered List</h2>
+        <ol>
+            <li> Monday </li>
+            <li>Tuesday</li>
+            <li>wenesday</li>
+        </ol>
+        <ul>
+            <h2>Unodered List</h2>
+            <li>Thrusday</li>
+            <li>Friday</li>
+        </ul>
+        <h2>Defination Lists</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language - a language for creating webpages</dd>
+        </dl>
+        <h2>Nested List</h2>
+        <ol>
+            <li>Frontend Languages</li>
+            <ul>
+                <li> HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+            <li> Backened Languges</li>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>PHP</li>
+            </ul>
+        </ol>
+        <h2>Images</h2>
+        <img src="<img src="https://www.bing.com/images/search?view= alt="Picture of me at the top of a 
+        building" width="350px" height="250px">
+        <h2>Tables In HTML</h2>
+        <table border="1" >
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Johnpaul K</td>
+                    <td>Male</td>
+                    <td>Kenya</td>
+                </tr>
+                   <tr>
+                    <td>Gerad</td>
+                    <td>Male</td>
+                    <td>SouthAfrica</td>
+                </tr>
+                   <tr>
+                    <td>Josphine</td>
+                    <td>Male</td>
+                    <td>Nigeria</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Embedding Videos & Audio</h2>
+        <video width="500" height="300" controls>
+            <source src="media/glass.mp4" type="video/mp4">
+            Your browser does not support the video
+            </video>
+        <audio width="500" height="300" controls>
+            <source src="media/no turning.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+        <h2>Forms</h2>
+        <form action="location" method="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name here...">
+                <br /><br />
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email here..."> 
+                <br /><br />
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" placeholder="Enter your age here...">
+                <br /><br />
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob">
+                <br /><br />
+                <label for="gender">Gender:</label><br />
+                <input type="radio" name="gender" value="Male">Male<br />
+                <input type="radio" name="gender" value="Female">Female<br />
+                <br /><br />
+                <label for="cv">Upload CV:</label>
+                <input type="file" name="cv" id="cv">
+                <br /><br />
+                <label for="bio">Bio:</label>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Write your bio here..."></textarea>
+                <br /><br />
+                <input type="submit" value="Submit">
+            </form>
+
+           </body>
+</html>
